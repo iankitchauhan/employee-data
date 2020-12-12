@@ -1,0 +1,50 @@
+
+<form [formGroup]="form">
+  <mat-form-field class="demo-full-width">
+  <input
+
+      formControlName="company_name"
+      matInput
+      placeholder="Please enter  Name"
+    />
+    </mat-form-field>
+  <mat-form-field class="demo-full-width">
+    <input
+      formControlName="title"
+      matInput
+      placeholder="Pleas enter title"
+    />
+  </mat-form-field>
+  <mat-form-field class="demo-full-width" >
+    <input
+      formControlName="start_date"
+      matInput
+      placeholder="Pleas enter date"
+    />
+  </mat-form-field>
+  <mat-form-field class="demo-full-width" >
+    <input
+      formControlName="location"
+      matInput
+      placeholder="Pleas enter your location"
+    />
+  </mat-form-field>
+  <mat-form-field class="demo-full-width" >
+    <input
+      formControlName="description"
+      matInput
+      placeholder="Pleas enter your description"
+    />
+  </mat-form-field>
+  <mat-form-field class="demo-full-width" >
+    <input
+
+      formControlName="email_id"
+      matInput
+      placeholder="Pleas enter your password"
+    />
+  </mat-form-field>
+  <button mat-raised-button mat-stroked-button type="button" color="primary" (click)="addJob()" [disabled]="form.invalid" >
+    Sign up
+  </button>
+</form>

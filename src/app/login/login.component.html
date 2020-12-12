@@ -1,0 +1,22 @@
+<h2>Please Login</h2>
+<form [formGroup]="form">
+  <mat-form-field class="demo-full-width">
+    <input
+      formControlName="email_id"
+      matInput
+      placeholder="Pleas enter email"
+    />
+  </mat-form-field>
+  <mat-form-field class="demo-full-width" >
+    <input
+    type="password"
+      formControlName="password"
+      matInput
+      placeholder="Pleas enter your password"
+    />
+  </mat-form-field>
+  <button mat-raised-button mat-stroked-button type="button" color="primary" (click)="signUp()" [disabled]="form.invalid" >
+    Sign up
+  </button>
+</form>
+<h1>Don't i have an account ,click here to sign up <a routerLink="sign-up">Sign up</a></h1>
