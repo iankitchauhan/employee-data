@@ -1,4 +1,7 @@
-
+<div class="header">
+  <img src="../../assets/header.png" >
+  </div>
+<div class="container">
 <form [formGroup]="form">
   <mat-form-field class="demo-full-width">
   <input
@@ -15,12 +18,11 @@
       placeholder="Pleas enter title"
     />
   </mat-form-field>
+  <br/>
   <mat-form-field class="demo-full-width" >
-    <input
-      formControlName="start_date"
-      matInput
-      placeholder="Pleas enter date"
-    />
+    <input matInput formControlName="start_date" [matDatepicker]="picker" placeholder="Choose a date">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
   </mat-form-field>
   <mat-form-field class="demo-full-width" >
     <input
@@ -29,6 +31,7 @@
       placeholder="Pleas enter your location"
     />
   </mat-form-field>
+  <br/>
   <mat-form-field class="demo-full-width" >
     <input
       formControlName="description"
@@ -44,7 +47,9 @@
       placeholder="Pleas enter your password"
     />
   </mat-form-field>
+  <br/>
   <button mat-raised-button mat-stroked-button type="button" color="primary" (click)="addJob()" [disabled]="form.invalid" >
-    Sign up
+  Add
   </button>
 </form>
+</div>

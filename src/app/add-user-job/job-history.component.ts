@@ -27,6 +27,7 @@ export class JobHistoryComponent implements OnInit {
     });
   }
   addJob(){
+    console.log(this.form.value,'function called');
     this.cocktail.addUser(this.form.value,'user_job_history').subscribe((res: any) => {
       this._location.back();
     })

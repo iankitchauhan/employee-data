@@ -2,5 +2,101 @@
   width: 32px;
 }
 img {
-  width: 100px;
+  display: block;
+  margin: auto;
+}
+
+.WORK-EXPERIENCE{
+  width: 178px;
+  height: 24px;
+  margin: 0 813px 30px 0;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #293031;
+}
+
+.user-name{
+  color: #286aa6;
+  float: right;
+}
+
+.create-button {
+  min-width: 213px;
+  border-radius: 4px;
+  background-color: #16ba6a;
+  font-weight: 400;
+  letter-spacing: 0.9px;
+  color: #ffffff;
+  box-shadow: none !important;
+  line-height: 48px;
+  height: 48px;
+  float: right;
+  margin-left: 10px;
+}
+
+.mat-icon {
+  margin-right: 2px;
+}
+
+.material-icons-outlined{
+  font-size: 18px;
+  height: 18px !important;
+  line-height: 18px;
+}
+
+.spacing{
+  margin: 10px;
+}
+
+tr.mat-header-row.ng-star-inserted {
+  border: solid 1px #e6e6e6;
+  background-color: #fafafa;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4c4c4c;
+}
+
+button.mat-sort-header-button {
+  font-weight: 500;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: black;
+}
+b{
+  color: black;
+}
+
+.header{
+  background-image: linear-gradient(273deg, #27aae2 100%, #1e3e73 19%);
+}
+
+mat-progress-spinner {
+  margin-left: 46%;
+}
+
+.refresh span {
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.9px;
+}
+.refresh-holder {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }

@@ -1,0 +1,43 @@
+.Rectangle-2 {
+  width: 945px;
+  height: 520px;
+  margin: 30px 247px 0 248px;
+  padding: 0 555px 0 0;
+  border-radius: 2px;
+  box-shadow: 0 10px 20px 0 rgba(210, 210, 210, 0.5);
+  background-color: #ffffff;
+}
+.Rectangle-3 {
+  width: 390px;
+  height: 520px;
+  padding: 50px 69px 51px;
+  background-color: #ffffff;
+
+}
+
+.Asset-23x {
+  width: 720px;
+  height: 424px;
+  margin: 93px 209px 33px 511px;
+  object-fit: contain;
+
+}
+.button-class{
+  width: 108px;
+  height: 35px;
+  margin: 20px 52px 54px 0;
+  padding: 9px 23px 8px;
+  border: solid 1px #23c994;
+  background-color: #ffffff;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #23c994;
+}
+
+img {
+  display: block;
+  margin: auto;
+}

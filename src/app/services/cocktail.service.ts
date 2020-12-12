@@ -26,4 +26,9 @@ export class CocktailService {
     return this.http.get(url);
   }
 
+  getUserName(queryParams){
+    let url = `${this.baseUrl}/user?email_id=${queryParams}`;
+    return this.http.get(url);
+  }
+
 }
