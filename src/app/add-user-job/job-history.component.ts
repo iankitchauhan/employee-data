@@ -1,6 +1,6 @@
 import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { EmployeeService } from '../services/employee.service';
 
@@ -10,14 +10,14 @@ import { EmployeeService } from '../services/employee.service';
   styleUrls: ['./job-history.component.css']
 })
 export class JobHistoryComponent implements OnInit {
-  form;
+  form:FormGroup;
+  defaultEmail: any;
   constructor(
     private employeeDataService: EmployeeService,
     private fb: FormBuilder,
     private _location: Location,
     private route: ActivatedRoute
   ) { }
-  defaultEmail: any
   ngOnInit() {
     this.route.queryParams.subscribe(params => {
       this.defaultEmail = params.email;
