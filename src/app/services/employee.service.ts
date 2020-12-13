@@ -12,11 +12,11 @@ export class EmployeeService {
 
   ) { }
 
-  addUser(loginData,apiUrl?){
+  addUser(loginData, apiUrl?) {
     const url = `${this.baseUrl}/${apiUrl}`;
-   return this.http.post(url,loginData);
+    return this.http.post(url, loginData);
   }
-  getData(params,endPoint) {
+  getData(params, endPoint) {
     let url = `${this.baseUrl}/${endPoint}?email_id=${params}`;
     return this.http.get(url);
   }

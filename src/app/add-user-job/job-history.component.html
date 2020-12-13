@@ -1,57 +1,36 @@
-<div class="header">
-  <img src="../../assets/header.png" >
-  </div>
+<app-header [HeaderView]="2"></app-header>
 <div class="container">
-  <p class="HAVE-AN-ACCOUNT-JUS">ADD YOUR WORK<br/>
-    EXPERIENCE HERE</p>
-<form [formGroup]="form">
-  <mat-form-field class="demo-full-width">
-  <input
-
-      formControlName="company_name"
-      matInput
-      placeholder="Please enter  Name"
-    />
+  <p class="HAVE-AN-ACCOUNT-JUS">
+    ADD YOUR WORK<br />
+    EXPERIENCE HERE
+  </p>
+  <form [formGroup]="form">
+    <mat-form-field class="demo-full-width">
+      <input formControlName="company_name" matInput placeholder="Please enter  Name" />
     </mat-form-field>
-  <mat-form-field class="demo-full-width">
-    <input
-      formControlName="title"
-      matInput
-      placeholder="Please enter title"
-    />
-  </mat-form-field>
-  <br/>
-  <mat-form-field class="demo-full-width" >
-    <input matInput formControlName="start_date" [matDatepicker]="picker" placeholder="Choose a date">
-    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-    <mat-datepicker #picker></mat-datepicker>
-  </mat-form-field>
-  <mat-form-field class="demo-full-width" >
-    <input
-      formControlName="location"
-      matInput
-      placeholder="Pleas enter your location"
-    />
-  </mat-form-field>
-  <br/>
-  <mat-form-field class="demo-full-width" >
-    <input
-      formControlName="description"
-      matInput
-      placeholder="Please enter your description"
-    />
-  </mat-form-field>
-  <mat-form-field class="demo-full-width" >
-    <input
-
-      formControlName="email_id"
-      matInput
-      placeholder="Please enter your email id"
-    />
-  </mat-form-field>
-  <br/>
-  <button class="button-class" mat-raised-button mat-stroked-button type="button" color="primary" (click)="addJob()" [disabled]="form.invalid" >
-  Add
-  </button>
-</form>
+    <mat-form-field class="demo-full-width">
+      <input formControlName="title" matInput placeholder="Please enter title" />
+    </mat-form-field>
+    <br />
+    <mat-form-field class="demo-full-width">
+      <input matInput formControlName="start_date" [matDatepicker]="picker" placeholder="Choose a date" />
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field class="demo-full-width">
+      <input formControlName="location" matInput placeholder="Pleas enter your location" />
+    </mat-form-field>
+    <br />
+    <mat-form-field class="demo-full-width">
+      <input formControlName="description" matInput placeholder="Please enter your description" />
+    </mat-form-field>
+    <mat-form-field class="demo-full-width">
+      <input formControlName="email_id" matInput placeholder="Please enter your email id" />
+    </mat-form-field>
+    <br />
+    <button class="button-class" mat-raised-button mat-stroked-button type="button" color="primary" (click)="addJob()"
+      [disabled]="form.invalid">
+      Add
+    </button>
+  </form>
 </div>

@@ -22,6 +22,7 @@ import { NameComponent } from './sign-up/name.component';
 import { EmployeelistComponent } from './listing/employee-listing.component';
 import { JobHistoryComponent } from './add-user-job/job-history.component';
 import { LoginComponent } from './login/login.component';
+import { HeaderComponent } from './shared/header/header.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { LoginComponent } from './login/login.component';
     NameComponent,
     EmployeelistComponent,
     JobHistoryComponent,
-    LoginComponent
+    LoginComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

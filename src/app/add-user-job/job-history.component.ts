@@ -14,26 +14,25 @@ export class JobHistoryComponent implements OnInit {
   constructor(
     private employeeDataService: EmployeeService,
     private fb: FormBuilder,
-    private _location:Location,
+    private _location: Location,
     private route: ActivatedRoute
   ) { }
-defaultEmail:any
+  defaultEmail: any
   ngOnInit() {
     this.route.queryParams.subscribe(params => {
       this.defaultEmail = params.email;
     });
     this.form = this.fb.group({
-      company_name: ['',Validators.required],
-      title: ['',Validators.required],
-      start_date: ['',Validators.required],
-      location: ['',Validators.required],
-      description: ['',Validators.required],
-      email_id: [this.defaultEmail,Validators.required],
+      company_name: ['', Validators.required],
+      title: ['', Validators.required],
+      start_date: ['', Validators.required],
+      location: ['', Validators.required],
+      description: ['', Validators.required],
+      email_id: [this.defaultEmail, Validators.required],
     });
   }
-  addJob(){
-    console.log(this.form.value,'function called');
-    this.employeeDataService.addUser(this.form.value,'user_job_history').subscribe((res: any) => {
+  addJob() {
+    this.employeeDataService.addUser(this.form.value, 'user_job_history').subscribe((res: any) => {
       this._location.back();
     })
   }

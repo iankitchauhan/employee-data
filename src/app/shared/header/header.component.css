@@ -1,0 +1,13 @@
+.header{
+  background-image: linear-gradient(273deg, #27aae2 100%, #1e3e73 19%);
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+
+.logo-img {
+  display: block;
+  margin: auto;
+}

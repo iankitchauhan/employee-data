@@ -10,23 +10,23 @@ import { EmployeeService } from '../services/employee.service';
 })
 export class LoginComponent implements OnInit {
 
-  form:FormGroup;
+  form: FormGroup;
   constructor(
     private employeeDataService: EmployeeService,
     private fb: FormBuilder,
-    private router:Router
+    private router: Router
   ) { }
   ngOnInit() {
     this.form = this.fb.group({
-      email_id: ['',Validators.required],
-      password: ['',Validators.required],
+      email_id: ['', Validators.required],
+      password: ['', Validators.required],
     });
 
-}
-  signUp(){
-    const dataToSend =this.form.value;
-    this.employeeDataService.addUser(dataToSend,'login').subscribe((res: any) => {
-      this.router.navigate(['user-history-listing'],{queryParams:{email:dataToSend['email_id']}})
+  }
+  signUp() {
+    const dataToSend = this.form.value;
+    this.employeeDataService.addUser(dataToSend, 'login').subscribe((res: any) => {
+      this.router.navigate(['user-history-listing'], { queryParams: { email: dataToSend['email_id'] } })
     })
   }
 

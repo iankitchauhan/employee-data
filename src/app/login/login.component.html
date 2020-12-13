@@ -1,41 +1,28 @@
-<div >
-  <h1  class="header__heading"><img class="logo-img" src="../assets/gamma.png"></h1>
+<app-header [HeaderView]="1"></app-header>
 <div class="container">
-<div class="row login-form">
-  <div class="col-md-4">
-    <p class="HAVE-AN-ACCOUNT-JUS">HAVE AN ACCOUNT?<br/>
-      JUST SIGN IN!</p>
-<form [formGroup]="form">
-  <mat-form-field class="demo-full-width">
-    <input
-      formControlName="email_id"
-      matInput
-      placeholder="Pleas enter email"
-    />
-  </mat-form-field>
-  <br/>
-  <mat-form-field class="demo-full-width" >
-    <input
-    type="password"
-      formControlName="password"
-      matInput
-      placeholder="Pleas enter your password"
-    />
-  </mat-form-field>
-  <br/>
-  <button class="button-class" mat-raised-button mat-stroked-button type="button" color="primary" (click)="signUp()" [disabled]="form.invalid" >
-    SIGN UP
-  </button>
-</form>
-<p class="Already-have-an-acco">Don’t have an account? <span class="SIGN-IN" routerLink="sign-up">SIGN UP</span></p>
+  <div class="row login-form">
+    <div class="col-md-4">
+      <p class="HAVE-AN-ACCOUNT-JUS">HAVE AN ACCOUNT?<br />
+        JUST SIGN IN!</p>
+      <form [formGroup]="form">
+        <mat-form-field class="demo-full-width">
+          <input formControlName="email_id" matInput placeholder="Pleas enter email" />
+        </mat-form-field>
+        <br />
+        <mat-form-field class="demo-full-width">
+          <input type="password" formControlName="password" matInput placeholder="Pleas enter your password" />
+        </mat-form-field>
+        <br />
+        <button class="button-class" mat-raised-button mat-stroked-button type="button" color="primary"
+          (click)="signUp()" [disabled]="form.invalid">
+          LOGIN </button>
+      </form>
+      <p class="Already-have-an-acco">Don’t have an account? <span class="SIGN-IN" routerLink="sign-up">SIGN UP</span>
+      </p>
 
-</div>
-<div class="col-md-8">
-  <img class="form-img" src="../../assets/bclarge.png">
-</div>
-</div>
-</div>
-<!-- <span class="Asset-23x">
-<img src="../../assets/main.png">
-</span> -->
+    </div>
+    <div class="col-md-8">
+      <img class="form-img" src="../../assets/bclarge.png">
+    </div>
+  </div>
 </div>

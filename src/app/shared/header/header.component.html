@@ -1,0 +1,8 @@
+<ng-container [ngSwitch]="HeaderView">
+  <h1 class="header__heading" *ngSwitchCase="1">
+    <img class="logo-img" src="../assets/gamma.png">
+  </h1>
+  <div class="header" *ngSwitchCase="2">
+    <img src="../../../assets/header.png">
+  </div>
+</ng-container>

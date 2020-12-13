@@ -14,44 +14,43 @@ export class EmployeelistComponent implements OnInit {
   loader = true;
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
-  displayedColumns: string[] = ['company_name', 'title', 'start_date','location','description'];
- userData:any;
- currentUrl:any;
-  constructor(  private route: ActivatedRoute,    private employeeDataService: EmployeeService, private _location:Location,
-    private router:Router
-    ) { }
+  displayedColumns: string[] = ['company_name', 'title', 'start_date', 'location', 'description'];
+  userData: any;
+  currentUrl: any;
+  constructor(private route: ActivatedRoute, private employeeDataService: EmployeeService, private _location: Location,
+    private router: Router
+  ) { }
 
   ngOnInit() {
-   this.route.queryParams.subscribe(params => {
+    this.route.queryParams.subscribe(params => {
       this.email = params;
-      console.log(this.email,'what we are getting here');
       this.getUserData(params.email);
       this.getUserName(params.email);
     });
   }
-  reloadFilteredData(){
-  window.location.reload()
+  reloadFilteredData() {
+    window.location.reload()
   }
 
-  getUserName(email){
+  getUserName(email) {
     this.loader = true;
-this.employeeDataService.getData(email,'user').subscribe(res=>{
-if(res) {
-  this.loader = false;
- this.userData =  res;
-}
-})
+    this.employeeDataService.getData(email, 'user').subscribe(res => {
+      if (res) {
+        this.loader = false;
+        this.userData = res;
+      }
+    })
   }
 
-  getUserData(email){
-this.employeeDataService.getData(email,'user_job_history').subscribe((res:any)=>{
-  this.dataSource = new MatTableDataSource<any>(res.past_jobs);
-  this.dataSource.paginator = this.paginator;
-  this.dataSource.sort = this.sort;
-})
+  getUserData(email) {
+    this.employeeDataService.getData(email, 'user_job_history').subscribe((res: any) => {
+      this.dataSource = new MatTableDataSource<any>(res.past_jobs);
+      this.dataSource.paginator = this.paginator;
+      this.dataSource.sort = this.sort;
+    })
   }
-  addWorkExp(){
-    this.router.navigate(['add-user-history'],{queryParams:{email: this.email.email}})
+  addWorkExp() {
+    this.router.navigate(['add-user-history'], { queryParams: { email: this.email.email } })
 
   }
 
