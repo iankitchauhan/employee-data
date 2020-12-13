@@ -21,6 +21,7 @@
     </div>
   </div>
 </div>
+<div *ngIf="expList && expList.length; else noDataFound">
 <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
   <ng-container matColumnDef="company_name">
     <th mat-header-cell *matHeaderCellDef mat-sort-header><b>Company</b></th>
@@ -51,6 +52,12 @@
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
   <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
 </table>
+</div>
 <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
 
+<ng-template  #noDataFound>
+<div class="no-data-found" *ngIf="expList && expList.length === 0">
+<h1>No Data found,Please add your work experience</h1>
+</div>
+</ng-template>
 <mat-progress-spinner *ngIf="loader" mode="indeterminate"></mat-progress-spinner>

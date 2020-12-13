@@ -6,26 +6,26 @@
   </p>
   <form [formGroup]="form">
     <mat-form-field class="demo-full-width">
-      <input formControlName="company_name" matInput placeholder="Please enter  Name" />
+      <input formControlName="company_name" matInput placeholder="Name" />
     </mat-form-field>
     <mat-form-field class="demo-full-width">
-      <input formControlName="title" matInput placeholder="Please enter title" />
+      <input formControlName="title" matInput placeholder="Title" />
     </mat-form-field>
     <br />
     <mat-form-field class="demo-full-width">
-      <input matInput formControlName="start_date" [matDatepicker]="picker" placeholder="Choose a date" />
+      <input matInput formControlName="start_date" [matDatepicker]="picker" placeholder="Select Date" />
       <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
       <mat-datepicker #picker></mat-datepicker>
     </mat-form-field>
     <mat-form-field class="demo-full-width">
-      <input formControlName="location" matInput placeholder="Pleas enter your location" />
+      <input formControlName="location" matInput placeholder="Location" />
     </mat-form-field>
     <br />
     <mat-form-field class="demo-full-width">
-      <input formControlName="description" matInput placeholder="Please enter your description" />
+      <input formControlName="description" matInput placeholder="Description" />
     </mat-form-field>
     <mat-form-field class="demo-full-width">
-      <input formControlName="email_id" matInput placeholder="Please enter your email id" />
+      <input formControlName="email_id" matInput placeholder="Email" />
     </mat-form-field>
     <br />
     <button class="button-class" mat-raised-button mat-stroked-button type="button" color="primary" (click)="addJob()"

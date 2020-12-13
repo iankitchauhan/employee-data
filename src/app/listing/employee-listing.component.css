@@ -21,10 +21,11 @@
 .create-button {
   min-width: 213px;
   border-radius: 4px;
-  background-color: #16ba6a;
+  border: solid 1px #23c994;
+  color: #23c994;
   font-weight: 400;
   letter-spacing: 0.9px;
-  color: #ffffff;
+ background-color: #ffffff;
   box-shadow: none !important;
   line-height: 48px;
   height: 48px;
@@ -95,29 +96,22 @@ mat-progress-spinner {
 }
 
 .Raj-Parmar {
-
   width: 89px;
-
   height: 21px;
-
   margin: 0 0 33px 813px;
-
   font-family: Roboto;
-
   font-size: 18px;
-
   font-weight: normal;
-
   font-stretch: normal;
-
   font-style: normal;
-
   line-height: normal;
-
   letter-spacing: normal;
-
   text-align: right;
-
+  padding-right: 27%;
   color: #286aa6;
 
+}
+
+.no-data-found{
+  text-align: center;
 }

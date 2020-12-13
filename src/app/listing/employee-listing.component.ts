@@ -9,14 +9,14 @@ import { EmployeeService } from '../services/employee.service';
   styleUrls: ['./employee-listing.component.css']
 })
 export class EmployeelistComponent implements OnInit {
-  email
+  email:any;
   dataSource: any;
   loader = true;
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
   displayedColumns: string[] = ['company_name', 'title', 'start_date', 'location', 'description'];
   userData: any;
-  currentUrl: any;
+  expList: any;
   constructor(private route: ActivatedRoute, private employeeDataService: EmployeeService, private _location: Location,
     private router: Router
   ) { }
@@ -44,9 +44,13 @@ export class EmployeelistComponent implements OnInit {
 
   getUserData(email) {
     this.employeeDataService.getData(email, 'user_job_history').subscribe((res: any) => {
+      this.expList = res.past_jobs;
+      this.loader = false;
       this.dataSource = new MatTableDataSource<any>(res.past_jobs);
       this.dataSource.paginator = this.paginator;
       this.dataSource.sort = this.sort;
+    },error=>{
+      this.loader = false;
     })
   }
   addWorkExp() {

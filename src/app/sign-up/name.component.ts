@@ -1,6 +1,7 @@
 import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { EmployeeService } from '../services/employee.service';
 
 @Component({
@@ -14,7 +15,7 @@ export class NameComponent implements OnInit {
   constructor(
     private employeeDataService: EmployeeService,
     private fb: FormBuilder,
-    private _location: Location
+   private router: Router
   ) { }
   ngOnInit() {
     this.form = this.fb.group({
@@ -25,8 +26,10 @@ export class NameComponent implements OnInit {
 
   }
   signUp() {
+    const dataToSend = this.form.value;
     this.employeeDataService.addUser(this.form.value, 'sign_up').subscribe((res: any) => {
-      this._location.back();
+      this.router.navigate(['user-history-listing'], { queryParams: { email: dataToSend['email_id'] } })
+
     })
   }
 

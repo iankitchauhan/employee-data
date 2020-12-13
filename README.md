@@ -5,6 +5,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 1.Angular Material Design
 2. Bootstrap 4
 
+## Things Implemented :-
+1.Navigation Extras;
+2.Input property(to transfer data from parent to child);
+3.pagination;
+4.sorting,
+5.Services
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

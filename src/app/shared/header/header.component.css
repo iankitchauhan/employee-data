@@ -1,5 +1,7 @@
 .header{
-  background-image: linear-gradient(273deg, #27aae2 100%, #1e3e73 19%);
+  background-image: linear-gradient( to top right, #1e3e73 19%, #27aae2 100% );
+  padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 img {
@@ -10,4 +12,8 @@ img {
 .logo-img {
   display: block;
   margin: auto;
+}
+
+h1.header__heading {
+  padding-bottom: 14px;
 }
