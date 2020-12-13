@@ -22,22 +22,3 @@
   object-fit: contain;
 
 }
-.button-class{
-  width: 108px;
-  height: 35px;
-  margin: 20px 52px 54px 0;
-  padding: 9px 23px 8px;
-  border: solid 1px #23c994;
-  background-color: #ffffff;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #23c994;
-}
-
-img {
-  display: block;
-  margin: auto;
-}

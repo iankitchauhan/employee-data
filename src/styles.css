@@ -4,3 +4,101 @@
 table {
   width: 100%;
 }
+
+
+.mat-form-field-infix {
+  width: 309px !important;
+  margin: 8px 1px 10px;
+}
+
+.button-class{
+  width: 108px;
+  height: 35px;
+  margin: 20px 52px 54px 0;
+  padding: 9px 23px 8px;
+  border: solid 1px #23c994;
+  background-color: #ffffff;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #23c994;
+}
+
+.logo-img {
+  display: block;
+  margin: auto;
+}
+
+.form-img{
+  width: 92%;
+  margin: 10%;
+}
+
+.Already-have-an-acco {
+  display: initial;
+  margin-left: 35px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #8c949c;
+
+}
+
+.SIGN-IN {
+  width: 43px;
+  text-decoration: underline;
+  height: 14px;
+  margin: 54px 63px 0 10px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #23c994;
+  cursor: pointer;
+}
+
+.HAVE-AN-ACCOUNT-JUS {
+  width: 285px;
+  height: 60px;
+  margin: 34px 19px 50px;
+  font-size: 18px;
+  font-weight: 500;
+
+  font-stretch: normal;
+
+  font-style: normal;
+
+  line-height: 1.67;
+
+  letter-spacing: 5px;
+
+  text-align: center;
+
+  color: #343534;
+
+}
+
+.login-form{
+  border-radius: 2px;
+  box-shadow: 0 10px 20px 0 rgba(210, 210, 210, 0.5);
+  background-color: #ffffff;
+  margin-bottom: 10%;
+}
+
+body{
+  background-color: #f9f9f9;;
+}
+
+
+form{
+  margin: 30px;
+}

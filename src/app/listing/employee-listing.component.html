@@ -9,7 +9,7 @@
       <span>REFRESH</span>
     </a>
   </div>
-  <button routerLink="/add-user-history"  class="create-button" mat-raised-button >
+  <button  (click)="addWorkExp()"  class="create-button" mat-raised-button >
     <mat-icon class="material-icons-outlined">add</mat-icon>
     <span>ADD</span>
   </button>
@@ -20,7 +20,7 @@
   <p class="WORK-EXPERIENCE">Work Experience</p>
   </div>
   <div class="col-sm-6">
-  <p class="user-name">{{userData?.name}}</p>
+  <p class="user-name Raj-Parmar">{{userData?.name}}</p>
   </div>
   </div>
   </div>

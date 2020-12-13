@@ -2,6 +2,8 @@
   <img src="../../assets/header.png" >
   </div>
 <div class="container">
+  <p class="HAVE-AN-ACCOUNT-JUS">ADD YOUR WORK<br/>
+    EXPERIENCE HERE</p>
 <form [formGroup]="form">
   <mat-form-field class="demo-full-width">
   <input
@@ -15,7 +17,7 @@
     <input
       formControlName="title"
       matInput
-      placeholder="Pleas enter title"
+      placeholder="Please enter title"
     />
   </mat-form-field>
   <br/>
@@ -36,7 +38,7 @@
     <input
       formControlName="description"
       matInput
-      placeholder="Pleas enter your description"
+      placeholder="Please enter your description"
     />
   </mat-form-field>
   <mat-form-field class="demo-full-width" >
@@ -44,11 +46,11 @@
 
       formControlName="email_id"
       matInput
-      placeholder="Pleas enter your password"
+      placeholder="Please enter your email id"
     />
   </mat-form-field>
   <br/>
-  <button mat-raised-button mat-stroked-button type="button" color="primary" (click)="addJob()" [disabled]="form.invalid" >
+  <button class="button-class" mat-raised-button mat-stroked-button type="button" color="primary" (click)="addJob()" [disabled]="form.invalid" >
   Add
   </button>
 </form>

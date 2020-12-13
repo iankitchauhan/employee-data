@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { JobHistoryComponent } from './add-user-job/job-history.component';
-import { CategoryComponent } from './listing/category.component';
+import { EmployeelistComponent } from './listing/employee-listing.component';
 import { LoginComponent } from './login/login.component';
-import { NameComponent } from './name/name.component';
+import { NameComponent } from './sign-up/name.component';
 
 const routes: Routes = [
   {
@@ -16,7 +16,7 @@ const routes: Routes = [
   },
   {
     path: 'user-history-listing',
-    component: CategoryComponent,
+    component: EmployeelistComponent,
   },
   {
     path: 'add-user-history',
