@@ -3,7 +3,8 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
 ## Dependencies used
 1.Angular Material Design
-2. Bootstrap 4
+2.Bootstrap 4
+3.Reactive form and validation
 
 ## Things Implemented :-
 1.Navigation Extras(params in url);
