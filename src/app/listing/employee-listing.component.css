@@ -3,7 +3,6 @@
   width: 178px;
   height: 24px;
   margin: 0 813px 30px 0;
-  font-family: Roboto;
   font-size: 20px;
   font-weight: 500;
   font-stretch: normal;
@@ -74,10 +73,6 @@ b{
   color: black;
 }
 
-.header{
-  background-image: linear-gradient(273deg, #27aae2 100%, #1e3e73 19%);
-}
-
 mat-progress-spinner {
   margin-left: 46%;
 }
@@ -99,7 +94,6 @@ mat-progress-spinner {
   width: 89px;
   height: 21px;
   margin: 0 0 33px 813px;
-  font-family: Roboto;
   font-size: 18px;
   font-weight: normal;
   font-stretch: normal;
