@@ -1,3 +1,4 @@
+import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { EmployeeService } from '../services/employee.service';
@@ -12,7 +13,8 @@ export class NameComponent implements OnInit {
   form: FormGroup;
   constructor(
     private employeeDataService: EmployeeService,
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    private _location: Location
   ) { }
   ngOnInit() {
     this.form = this.fb.group({
@@ -24,7 +26,7 @@ export class NameComponent implements OnInit {
   }
   signUp() {
     this.employeeDataService.addUser(this.form.value, 'sign_up').subscribe((res: any) => {
-
+      this._location.back();
     })
   }
 
