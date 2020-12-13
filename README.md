@@ -6,11 +6,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 2. Bootstrap 4
 
 ## Things Implemented :-
-1.Navigation Extras;
+1.Navigation Extras(params in url);
 2.Input property(to transfer data from parent to child);
 3.pagination;
-4.sorting,
+4.sorting on table columns,
 5.Services
+6.handling of no data found(array of work exp. is empty)
 
 ## Development server
 
